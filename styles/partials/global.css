@@ -1,0 +1,19 @@
+body {
+  @apply text-white overflow-x-hidden primary-gradient;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5em;
+  background: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply rounded-lg border-0.5 border-white border-solid primary-gradient;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg accent-gradient;
+}

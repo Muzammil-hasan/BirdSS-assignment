@@ -1,0 +1,15 @@
+@layer utilities {
+  .primary-gradient {
+    @apply bg-gradient-to-r from-blueDark to-blueMedium;
+  }
+  .secondary-gradient {
+    background: linear-gradient(
+      269.74deg,
+      rgba(255, 255, 255, 0.21) -254.09%,
+      rgba(255, 255, 255, 0) 99.84%
+    );
+  }
+  .accent-gradient {
+    @apply bg-gradient-to-r from-yellow to-orange;
+  }
+}
