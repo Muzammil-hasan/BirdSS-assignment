@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply px-12 py-1.5 secondary-gradient rounded-lg shadow-outline-sm text-lg bg-opacity-10;
+    @apply px-12 py-1.5 secondary-gradient rounded-lg shadow-outline-sm text-lg;
 
     &--primary {
       @apply text-white font-bold;
