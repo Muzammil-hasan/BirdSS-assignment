@@ -25,7 +25,23 @@
     color: white;
 
     &::after {
-      @apply absolute content-[''] inset-0 -left-32 shadow-outline-sm rounded-r-3xl secondary-gradient;
+      @apply absolute content-[''] inset-0 -left-32 shadow-outline-sm rounded-r-xl lg:rounded-r-3xl secondary-gradient;
+    }
+  }
+
+  .stroke-right {
+    position: relative;
+
+    &::after {
+      @apply content-[''] w-0.25 bg-white absolute right-0 bottom-8 h-3/4 hidden lg:block;
+    }
+  }
+
+  .stroke-bottom {
+    position: relative;
+
+    &::after {
+      @apply content-[''] block w-[86%] h-0.25 ml-auto bg-white absolute lg:bottom-4 bottom-0 lg:right-10 inset-x-4;
     }
   }
 }
