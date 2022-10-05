@@ -52,7 +52,7 @@ export default function Profile() {
 function KYCTab() {
   return (
     <Tab.Panel className={'lg:my-24 my-12'}>
-      <p className="px-8 text-xs font-medium text-center lg:px-0 lg:text-base sm:text-left">
+      <p className="px-8 text-xs font-medium text-center lg:px-0 lg:text-base lg:text-left">
         <span className="text-sm lg:text-lg text-danger">Note:</span> Upload only .jpg/jpeg or .png
         extension image file !!
       </p>
