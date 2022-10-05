@@ -1,5 +1,5 @@
 import { TriangleDownRoundedIcon } from '@/components/icons/TriangleDownIcon';
-import { NavLink as Link } from '@/components/utils/NavLink';
+import NavLink from '@/components/utils/NavLink';
 import { useMenuContext } from '@/context/MenuContext';
 import NavData from '@/context/NavData';
 import clsx from 'clsx';
@@ -19,7 +19,7 @@ export default function Sidebar() {
           <ul className="space-y-2 lg:space-y-5">
             {NavData.map(({ Icon, name, path, subLinks }) => (
               <li key={name} onClick={() => setOpen(false)}>
-                <Link
+                <NavLink
                   to={path}
                   activeClass={'active-link'}
                   className="flex items-center p-3 text-sm font-normal lg:px-3 lg:text-lg lg:py-7 rounded-r-3xl gap-x-5 text-lightGray hover:text-white transition-ease "
@@ -29,7 +29,7 @@ export default function Sidebar() {
                     {name}{' '}
                     {subLinks && <TriangleDownRoundedIcon className="w-2 h-2 lg:w-4 lg:h-4" />}
                   </span>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

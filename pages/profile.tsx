@@ -31,7 +31,7 @@ export default function Profile() {
                   >
                     {name} <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
                   </h2>
-                  <p className="mt-2 text-xs font-light text-center lg:text-left lg:text-sm">
+                  <p className="mt-3 text-xs font-light text-center lg:text-left lg:text-sm">
                     {description}
                   </p>
                 </button>

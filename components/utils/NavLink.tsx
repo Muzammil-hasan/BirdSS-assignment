@@ -10,7 +10,7 @@ interface IProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   activeClass: string;
 }
 
-export const NavLink = forwardRef(
+const NavLink = forwardRef(
   ({ className = '', to, prefetch, activeClass, ...props }: IProps, ref: any) => {
     const router = useRouter();
 
@@ -43,3 +43,6 @@ export const NavLink = forwardRef(
     );
   }
 );
+
+NavLink.displayName = 'NavLink';
+export default NavLink;
