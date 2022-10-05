@@ -1,5 +1,5 @@
 body {
-  @apply text-white overflow-x-hidden primary-gradient;
+  @apply text-white overflow-x-hidden primary-gradient font-primary;
 }
 
 /* width */

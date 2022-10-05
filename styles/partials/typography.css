@@ -1,5 +1,5 @@
 html {
-  @apply text-[16px] md:text-[1.9vw] xl:text-[1.2vw] 2xl:text-[0.9375vw]; /* for fluid design */
+  @apply text-[16px] md:text-[1.9vw] xl:text-[1.2vw]; /* for fluid design */
 }
 
 body {

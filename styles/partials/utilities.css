@@ -12,4 +12,20 @@
   .accent-gradient {
     @apply bg-gradient-to-r from-yellow to-orange;
   }
+
+  .transition-ease {
+    @apply transition-all duration-400 ease-out-expo will-change-transform;
+  }
+  .no-events {
+    @apply pointer-events-none select-none;
+  }
+
+  .active-link {
+    position: relative;
+    color: white;
+
+    &::after {
+      @apply absolute content-[''] inset-0 -left-32 shadow-outline-sm rounded-r-3xl secondary-gradient;
+    }
+  }
 }

@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['Poppins', 'ui-sans-serif'],
+      },
+      width: {
+        0.25: '0.05em',
+      },
+      height: {
+        0.25: '0.05em',
+      },
       colors: {
         blueDark: '#141E30',
         blueMedium: '#243B55',
@@ -19,6 +28,12 @@ module.exports = {
       boxShadow: {
         'outline-sm': '0 0 0 0.05em #ffffff',
         outline: '0 0 0 0.1em #ffffff',
+      },
+      transitionDuration: {
+        400: '400ms',
+      },
+      transitionTimingFunction: {
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
       },
       borderWidth: {
         0.5: '0.05em',
