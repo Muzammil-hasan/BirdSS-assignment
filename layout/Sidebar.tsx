@@ -15,8 +15,8 @@ export default function Sidebar() {
           `${!open ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`
         )}
       >
-        <nav className="flex justify-center mt-10 lg:mt-36 stroke-right">
-          <ul className="space-y-2 lg:space-y-6">
+        <nav className="flex justify-center mt-10 lg:mt-36 stroke stroke-right">
+          <ul className="space-y-2 lg:space-y-5">
             {NavData.map(({ Icon, name, path, subLinks }) => (
               <li key={name} onClick={() => setOpen(false)}>
                 <Link

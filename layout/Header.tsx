@@ -4,13 +4,11 @@ import { TriangleDownIcon } from '@/components/icons/TriangleDownIcon';
 import { useMenuContext } from '@/context/MenuContext';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
-// TODO: no-event on header span
-
 export default function Header() {
   const [open, setOpen] = useMenuContext();
 
   return (
-    <header className="flex items-center justify-between px-4 py-4 lg:px-8 stroke-bottom">
+    <header className="flex items-center justify-between px-4 py-4 lg:px-8 stroke stroke-bottom">
       <Logo />
       <div className="flex items-center gap-x-3 lg:gap-x-6">
         <button>

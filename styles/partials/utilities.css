@@ -5,8 +5,8 @@
   .secondary-gradient {
     background: linear-gradient(
       269.74deg,
-      rgba(255, 255, 255, 0.21) -254.09%,
-      rgba(255, 255, 255, 0) 99.84%
+      rgba(255, 255, 255, 0.41) -254.09%,
+      rgba(255, 255, 255, 0) 100%
     );
   }
   .accent-gradient {
@@ -29,19 +29,19 @@
     }
   }
 
-  .stroke-right {
+  .stroke {
     position: relative;
 
-    &::after {
+    &-right::after {
       @apply content-[''] w-0.25 bg-white absolute right-0 bottom-8 h-3/4 hidden lg:block;
     }
-  }
 
-  .stroke-bottom {
-    position: relative;
-
-    &::after {
+    &-bottom::after {
       @apply content-[''] block w-[86%] h-0.25 ml-auto bg-white absolute lg:bottom-4 bottom-0 lg:right-10 inset-x-4;
+    }
+
+    &-bottom-sm::after {
+      @apply content-[''] w-[15%] h-0.5 left-1 absolute top-10 group-hover:bg-white transition-ease;
     }
   }
 }

@@ -1,9 +1,13 @@
 @layer components {
   .btn {
-    @apply px-12 py-1.5 secondary-gradient rounded-lg shadow-outline-sm text-lg;
+    @apply rounded-xl shadow-outline-sm;
 
     &--primary {
-      @apply text-white font-bold;
+      @apply px-16 py-2 text-white font-bold accent-gradient text-2xl;
+    }
+
+    &--secondary {
+      @apply px-7 py-1.5 text-white secondary-gradient shadow-outline rounded-lg text-xs;
     }
   }
 }
