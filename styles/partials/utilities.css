@@ -41,7 +41,13 @@
     }
 
     &-bottom-sm::after {
-      @apply content-[''] w-[15%] h-0.5 left-1 absolute top-10 group-hover:bg-white transition-ease;
+      @apply content-[''] w-[40%] h-0.25 lg:h-0.5 left-1 absolute top-7 lg:top-8 group-hover:bg-white transition-ease;
     }
+  }
+
+  .text-gradient-gray {
+    background: -webkit-linear-gradient(90deg, #757f9a 0%, #d7dde8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

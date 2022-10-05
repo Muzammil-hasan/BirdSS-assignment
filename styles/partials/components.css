@@ -1,12 +1,16 @@
 @layer components {
   .btn {
-    @apply rounded-xl shadow-outline-sm;
+    @apply rounded-xl shadow-outline-sm flex justify-center items-center gap-x-2;
 
     &--primary {
       @apply px-16 py-2 text-white font-bold accent-gradient text-2xl;
     }
 
     &--secondary {
+      @apply px-16 py-2 text-white secondary-gradient lg:text-2xl text-base;
+    }
+
+    &--secondary-sm {
       @apply px-7 py-1.5 text-white secondary-gradient shadow-outline rounded-lg text-xs;
     }
   }

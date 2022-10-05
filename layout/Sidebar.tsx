@@ -11,7 +11,7 @@ export default function Sidebar() {
     <div>
       <aside
         className={clsx(
-          'absolute w-1/2 lg:w-1/5 h-full mt-1.5 lg:top-32 top-[4.5rem] transition-ease lg:translate-x-0 lg:opacity-100 secondary-gradient lg:bg-none shadow-xl lg:shadow-none',
+          'absolute w-1/2 lg:w-1/5 h-full mt-1.5 lg:top-32 top-[4.5rem] transition-ease lg:translate-x-0 lg:opacity-100 primary-gradient z-50 lg:bg-none shadow-xl lg:shadow-none',
           `${!open ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`
         )}
       >

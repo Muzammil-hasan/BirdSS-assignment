@@ -12,7 +12,7 @@ export function InputFile({ label, name }: { label: string; name: string }) {
       </figure>
       <label htmlFor={name} className="cursor-pointer">
         <input name={name} type="file" className="cursor-pointer w-28" />
-        <button className="pointer-events-none btn btn--secondary">Choose file</button>
+        <button className="pointer-events-none btn btn--secondary-sm">Choose file</button>
       </label>
     </div>
   );

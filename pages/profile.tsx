@@ -1,4 +1,6 @@
 import { InputFile } from '@/components/elements/Inputs';
+import DangerIcon from '@/components/icons/DangerIcon';
+import { StarGrayIcon, StarIcon } from '@/components/icons/StarIcon';
 import KYCData from '@/context/KYCData';
 import tabsData from '@/context/TabsData';
 import { Tab } from '@headlessui/react';
@@ -9,7 +11,9 @@ export default function Profile() {
   return (
     <section className="min-h-screen">
       <Tab.Group>
-        <Tab.List className={'flex items-start justify-between gap-x-4 lg:gap-x-20'}>
+        <Tab.List
+          className={'flex items-start lg:justify-start justify-between gap-x-4 lg:gap-x-20'}
+        >
           {tabsData.map(({ Icon, description, name }) => (
             <Tab key={name} as={Fragment}>
               {({ selected }) => (
@@ -21,7 +25,7 @@ export default function Profile() {
                 >
                   <h2
                     className={clsx(
-                      'flex items-center text-lg lg:text-[1.75rem] capitalize gap-x-2  after:bg-lightGray',
+                      'flex items-center text-lg lg:text-[1.75rem] capitalize gap-x-2  after:bg-lightGray stroke stroke-bottom-sm',
                       { 'after:bg-white': selected }
                     )}
                   >
@@ -66,5 +70,30 @@ function KYCTab() {
 }
 
 function MembershipTab() {
-  return <Tab.Panel>Content 2</Tab.Panel>;
+  return (
+    <Tab.Panel className={'lg:my-24 my-12'}>
+      <p className="text-sm font-light text-center lg:text-3xl lg:text-left">
+        You have applied for Basic membership
+      </p>
+
+      <div className="mt-16 space-y-16 lg:mx-44">
+        <div className="flex flex-col items-center justify-between gap-6 mx-10 lg:mx-0">
+          <button className="w-full btn btn--secondary">
+            Basic <StarIcon className="w-4 h-4" />
+          </button>
+          <button className="w-full btn btn--secondary text-lightGray shadow-lightGray">
+            <span>Advance</span> <StarGrayIcon className="w-4 h-4" />
+          </button>
+        </div>
+
+        <div className="flex flex-col items-center py-4 text-base font-medium lg:text-3xl gap-y-2 rounded-xl shadow-outline-sm text-gradient-gray">
+          <p className="inline-flex items-center gap-x-2">
+            <DangerIcon className="w-4 h-4 lg:w-8 lg:h-8" /> You need to pay
+          </p>
+          <p>₹ 250 to subscribe this membership</p>
+        </div>
+        <button className="mx-auto btn btn--primary">Pay Now</button>
+      </div>
+    </Tab.Panel>
+  );
 }
