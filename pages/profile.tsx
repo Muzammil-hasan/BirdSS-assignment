@@ -77,11 +77,11 @@ function MembershipTab() {
       </p>
 
       <div className="mt-16 space-y-16 lg:mx-44">
-        <div className="flex flex-col items-center justify-between gap-6 mx-10 lg:mx-0">
-          <button className="w-full btn btn--secondary">
+        <div className="flex flex-col items-center justify-between gap-6 mx-10 lg:flex-row lg:mx-0">
+          <button className="w-full lg:w-60 btn btn--secondary">
             Basic <StarIcon className="w-4 h-4" />
           </button>
-          <button className="w-full btn btn--secondary text-lightGray shadow-lightGray">
+          <button className="w-full lg:w-auto btn btn--secondary text-lightGray shadow-lightGray">
             <span>Advance</span> <StarGrayIcon className="w-4 h-4" />
           </button>
         </div>
